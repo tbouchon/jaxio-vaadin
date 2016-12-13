@@ -200,10 +200,10 @@ $output.file("pom.xml")##
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
+		<!-- dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-		</dependency>
+		</dependency -->
 		<!-- vaadin4spring https://github.com/peholmst/vaadin4spring contains lots of handy helpers for serious Spring + Vaadin 
 			applications. This example uses event bus to decouple the editor form from the MainUI class. -->
 		<dependency>
@@ -536,6 +536,7 @@ $output.file("pom.xml")##
 							<dependency>
 								<groupId>com.jaxio.celerio.packs</groupId>
 								<artifactId>pack-vaadin</artifactId>
+								<version>1.0.0-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 					</plugin>

@@ -29,16 +29,16 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
-    public EmbeddedServletContainerCustomizer containerCustomizer() {
-        return new Angular2PathLocationStrategyCustomizer();
-    }
+##    @Bean
+##    public EmbeddedServletContainerCustomizer containerCustomizer() {
+##        return new Angular2PathLocationStrategyCustomizer();
+##    }
 
-    // http://stackoverflow.com/questions/36761019/how-can-i-use-angular2-pathlocationstrategy-in-a-spring-boot-application
-    private static class Angular2PathLocationStrategyCustomizer implements EmbeddedServletContainerCustomizer {
-        @Override
-        public void customize(ConfigurableEmbeddedServletContainer container) {
-            container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/"));
-        }
-    }
+##    // http://stackoverflow.com/questions/36761019/how-can-i-use-angular2-pathlocationstrategy-in-a-spring-boot-application
+##    private static class Angular2PathLocationStrategyCustomizer implements EmbeddedServletContainerCustomizer {
+##        @Override
+##        public void customize(ConfigurableEmbeddedServletContainer container) {
+##            container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/"));
+##        }
+##    }
 }

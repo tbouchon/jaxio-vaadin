@@ -17,6 +17,8 @@
             <entityContextProperty property="rest" subPackage="rest" suffix="Resource"/>
             <entityContextProperty property="dto" subPackage="dto" suffix="DTO"/>
             <entityContextProperty property="dtoservice" subPackage="dto" suffix="DTOService"/>
+            <entityContextProperty property="vaadinform" subPackage="vaadin" suffix="Form"/>
+            <entityContextProperty property="vaadinevent" subPackage="vaadin" suffix="ModifiedEvent"/>
         </entityContextProperties>
     </celerioTemplateContext>
 </celerioPack>
